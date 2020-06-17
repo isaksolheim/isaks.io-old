@@ -1,0 +1,65 @@
+section.projects {
+  text-align: center;
+
+  a.project {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    background-size: 0;
+    max-width: 300px;
+    margin: 20px;
+
+    img {
+      width: 300px;
+      height: 220px;
+    }
+
+    .centered {
+      position: absolute;
+      top: calc(50% + 4px);
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      font-size: 20px;
+
+      .text {
+        color: white;
+        background: linear-gradient(to bottom, #ffa987 0%, #ffa987 100%);
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 4px 4px;
+        text-decoration: none;
+        transition: background-size 0.2s;
+      }
+    }
+
+    .info {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 2px;
+    }
+
+    .bottom-left {
+      bottom: 8px;
+      right: 16px;
+    }
+
+    .top-right {
+      top: 8px;
+      right: 16px;
+    }
+  }
+
+  a.project:hover {
+    background-size: 0;
+
+    .centered {
+      .text {
+        background-size: 4px 50px;
+        color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+a {
+  background: linear-gradient(to bottom, #ffa987 0%, #ffa987 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: #000000;
+  text-decoration: none;
+  transition: background-size 0.2s;
+}
+
+a:hover {
+  background-size: 4px 50px;
+}

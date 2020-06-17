@@ -1,0 +1,23 @@
+section.blog {
+  h2 {
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-weight: 200;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .share-button {
+    font-size: 14px;
+    color: blue;
+    margin-top: -10px;
+    cursor: pointer;
+  }
+}
