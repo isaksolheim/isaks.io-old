@@ -1,32 +1,26 @@
-.header {
-  margin-top: 20px;
+header {
   position: relative;
   text-align: center;
   height: 110px;
-  // background-color: red;
-  max-width: 710px;
   margin: 0 auto;
-  margin-top: 4px;
 
   img {
     width: 100%;
   }
 
-  .centered {
+  a.text-link {
+    cursor: pointer;
+    color: white;
     position: absolute;
-    top: calc(50% + 4px);
+    top: 57px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    font-size: 50px;
+    font-size: 3rem;
+  }
 
-    a {
-      color: white;
-    }
-
-    a:hover {
-      background-size: 4px 4px;
-    }
+  a.text-link:hover {
+    color: rgba(0, 0, 0, 0.8);
   }
 }

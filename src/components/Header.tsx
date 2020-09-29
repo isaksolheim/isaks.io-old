@@ -1,18 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import * as React from 'react';
+import TextLink from './text-link';
 
-const Header = () => {
-  return (
-    <div className='header'>
-      <img
-        src='http://ghchart.rshah.org/wickdeeb'
-        alt='Github contribution graph'
-      />
-      <div className='centered'>
-        <Link to='/'>isaks.io</Link>
-      </div>
-    </div>
-  );
-};
+const Header = () => (
+  <header>
+    <img src={require('../assets/empty-svg.svg')} alt='background' />
+    <img
+      style={{ position: 'absolute', left: 0, top: 0 }}
+      src='http://ghchart.rshah.org/wickdeeb'
+      alt='Github contribution graph'
+    />
+    <TextLink link='/' text='isaks.io' />
+  </header>
+);
 
 export default Header;
