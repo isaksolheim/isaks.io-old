@@ -1,11 +1,11 @@
 ---
 slug: '/projects/pingpong-machine'
-date: '2020-09-29'
+date: '2018-08-12'
 title: 'Pingpong machine'
 featuredImage: pingpong.jpg
 type: 'project'
 ---
 
-## pingpong machine
+## ...
 
 ![the machine](./pingpong.jpg)
