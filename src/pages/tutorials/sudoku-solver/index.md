@@ -6,3 +6,9 @@ type: 'tutorial'
 ---
 
 ## ...
+
+```javascript{numberLines: true}
+function test() {
+  console.log('This is a test');
+}
+```
