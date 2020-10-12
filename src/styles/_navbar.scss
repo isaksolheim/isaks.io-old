@@ -12,6 +12,10 @@ nav {
       a {
         font-size: 22px;
       }
+
+      a.selected {
+        background-color: #ffa987;
+      }
     }
   }
 }
