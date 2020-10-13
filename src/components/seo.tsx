@@ -13,7 +13,6 @@ const Seo = ({
   description: string;
   keywords: string;
   title: string;
-  image: string;
   url: string;
   author: string;
 }) => {
@@ -25,7 +24,6 @@ const Seo = ({
           description || data.site.siteMetadata.description;
         const metaTitle = title || data.site.siteMetadata.title;
         const metaUrl = url || data.site.siteMetadata.url;
-        const metaImage = image || data.site.siteMetadata.image;
         const metaAuthor = author || data.site.siteMetadata.author;
         const metaKeywords = image || [
           'web development',
@@ -54,10 +52,6 @@ const Seo = ({
                 content: `website`,
               },
               {
-                name: `image`,
-                content: metaImage,
-              },
-              {
                 name: `url`,
                 content: metaUrl,
               },
@@ -83,7 +77,6 @@ const detailsQuery = graphql`
         title
         description
         author
-        image
       }
     }
   }
