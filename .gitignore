@@ -6,3 +6,10 @@ node_modules
 public/
 .DS_Store
 yarn-error.log
+
+# Logs
+firebase-debug.log*
+firebase-error.log*
+
+# Misc
+.firebase/
