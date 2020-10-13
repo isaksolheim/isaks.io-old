@@ -18,7 +18,6 @@ const Layout = ({ children }) => (
       <meta name='og:title' content='isaks.io' />
       <meta name='og:type' content='website' />
       <meta name='og:description' content='Programmers Personal Website' />
-      <meta name='og:image' content='' />
       <meta name='og:locale' content='en_US' />
       <meta name='og:url' content='https://isaks.io' />
       <link rel='canoical' href='https://isaks.io' />
