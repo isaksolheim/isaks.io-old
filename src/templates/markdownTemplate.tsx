@@ -1,12 +1,34 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../layouts/layout';
-// import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
-// deckDeckGoHighlightElement();
+import { findAllIndexes } from '../utils/findAllIndexes';
+import { createHtmlWithHighlighting } from '../utils/htmlWithHighlighting';
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+deckDeckGoHighlightElement();
 
 const Template = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
+
+  let startOfCodesSnippets = findAllIndexes(
+    html,
+    '<code class="language-javscript">'
+  );
+  let endOfCodeSnipptes = findAllIndexes(html, '</code>');
+
+  for (let i = 0; i < startOfCodesSnippets.length; i++) {
+    startOfCodesSnippets[i] += 33;
+  }
+
+  for (let i = 0; i < endOfCodeSnipptes.length; i++) {
+    endOfCodeSnipptes[i] = endOfCodeSnipptes[i] - startOfCodesSnippets[i];
+  }
+
+  const htmlWithHighlighting = createHtmlWithHighlighting(
+    html,
+    startOfCodesSnippets,
+    endOfCodeSnipptes
+  );
 
   return (
     <Layout>
@@ -15,7 +37,7 @@ const Template = ({ data }) => {
         <time>{frontmatter.date}</time>
         <div
           className='markdown-content'
-          dangerouslySetInnerHTML={{ __html: html }}
+          dangerouslySetInnerHTML={{ __html: htmlWithHighlighting }}
         />
       </article>
     </Layout>
