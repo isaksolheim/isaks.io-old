@@ -37,7 +37,9 @@ const Template = ({ data }) => {
         <time>{frontmatter.date}</time>
         <div
           className='markdown-content'
-          dangerouslySetInnerHTML={{ __html: htmlWithHighlighting }}
+          dangerouslySetInnerHTML={{
+            __html: htmlWithHighlighting !== '' ? htmlWithHighlighting : html,
+          }}
         />
       </article>
     </Layout>
