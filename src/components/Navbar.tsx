@@ -1,30 +1,39 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import * as React from 'react';
+import Link from 'gatsby-link';
 
 const Navbar = () => {
+  const url = typeof window !== 'undefined' ? window.location.href : '';
   return (
     <nav>
       <ul>
         <li>
-          <Link to='/projects'>projects</Link>
+          <Link
+            className={`text-link ${
+              url.includes('projects') ? 'selected' : ''
+            }`}
+            to='/projects'
+          >
+            projects
+          </Link>
         </li>
         <li>
-          <Link to='/tutorials'>tutorials</Link>
+          <Link
+            className={`text-link ${
+              url.includes('tutorials') ? 'selected' : ''
+            }`}
+            to='/tutorials'
+          >
+            tutorials
+          </Link>
         </li>
         <li>
-          <Link to='/videos'>videos</Link>
+          <Link
+            className={`text-link ${url.includes('videos') ? 'selected' : ''}`}
+            to='/videos'
+          >
+            videos
+          </Link>
         </li>
-        {/*
-        <li>
-          <Link to='/blog'>blog</Link>
-        </li>
-        <li>
-          <a href='https://www.youtube.com/u/isaks/'>youtube</a>
-        </li>
-        <li>
-          <a href='https://www.github.com/wickdeeb/'>github</a>
-        </li>
-        */}
       </ul>
     </nav>
   );

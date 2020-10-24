@@ -1,11 +1,5 @@
-import React from 'react';
+import * as React from 'react';
 
-const Footer = () => {
-  return (
-    <footer>
-      <p>isaks.io / 2020</p>
-    </footer>
-  );
-};
+const Footer = () => <footer>isaks.io / 2020</footer>;
 
 export default Footer;
