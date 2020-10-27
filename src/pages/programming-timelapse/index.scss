@@ -1,0 +1,41 @@
+.programming-timelapse {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+
+  .content {
+    background-color: rgb(40, 42, 54);
+    max-width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    textarea {
+      resize: none;
+      width: 600px;
+      height: 400px;
+      padding: 10px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .content.playing {
+    overflow: auto;
+  }
+
+  button {
+    display: block;
+    border: 1px solid #333;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  button:hover {
+    background-color: #f2f2f2;
+  }
+}
