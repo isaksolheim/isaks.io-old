@@ -3,10 +3,9 @@ import React, { ChangeEvent } from 'react';
 interface Props {
   input: string;
   setInput: Function;
-  setPlaying: Function;
 }
 
-const Input: React.FC<Props> = ({ input, setInput, setPlaying }) => {
+const Input: React.FC<Props> = ({ input, setInput }) => {
   return (
     <div className='input-container'>
       <textarea
@@ -15,7 +14,6 @@ const Input: React.FC<Props> = ({ input, setInput, setPlaying }) => {
           setInput(evt.target.value)
         }
       />
-      <button onClick={() => setPlaying(true)}>Start</button>
     </div>
   );
 };

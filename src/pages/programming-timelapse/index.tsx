@@ -17,6 +17,13 @@ function App() {
         Note: This application currently only supports syntax highlighting for
         jsx
       </blockquote>
+
+      <div className='top-bar'>
+        <button onClick={() => setPlaying(!playing)}>
+          {!playing ? 'Start' : 'Back'}
+        </button>
+      </div>
+
       <div className={`content ${playing ? 'playing' : ''}`} id='content'>
         {playing ? (
           <>
@@ -24,10 +31,9 @@ function App() {
             <div style={{ height: '20px' }} />
           </>
         ) : (
-          <Input input={input} setInput={setInput} setPlaying={setPlaying} />
+          <Input input={input} setInput={setInput} />
         )}
       </div>
-      {playing && <button onClick={() => setPlaying(false)}>Back</button>}
     </div>
   );
 }

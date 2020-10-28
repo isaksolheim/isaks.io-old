@@ -2,6 +2,24 @@
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 
+  .top-bar {
+    max-width: 800px;
+    height: 50px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f6f8fa;
+    background-color: #282a36;
+
+    button {
+      border: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 18px;
+      background-color: #282a36;
+      color: #f6f8fa;
+      margin-top: 9px;
+    }
+  }
+
   .content {
     background-color: rgb(40, 42, 54);
     max-width: 800px;
@@ -21,19 +39,5 @@
   .content.playing {
     overflow: auto;
     padding-bottom: 100px;
-  }
-
-  button {
-    display: block;
-    border: none;
-    padding: 10px 20px;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 18px;
-    margin: 0 auto;
-    margin-top: 20px;
-    background-color: #282a36;
-    color: #f6f8fa;
-    margin-bottom: 40px;
   }
 }
