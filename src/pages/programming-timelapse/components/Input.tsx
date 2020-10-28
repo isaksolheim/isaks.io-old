@@ -15,7 +15,7 @@ const Input: React.FC<Props> = ({ input, setInput, setPlaying }) => {
           setInput(evt.target.value)
         }
       />
-      <button onClick={() => setPlaying(true)}>START TIMELAPSE</button>
+      <button onClick={() => setPlaying(true)}>Start</button>
     </div>
   );
 };
