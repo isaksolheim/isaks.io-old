@@ -10,6 +10,7 @@ const Input: React.FC<Props> = ({ input, setInput }) => {
     <div className='input-container'>
       <textarea
         value={input}
+        placeholder={`console.log('paste code here...')`}
         onChange={(evt: ChangeEvent<HTMLTextAreaElement>) =>
           setInput(evt.target.value)
         }
