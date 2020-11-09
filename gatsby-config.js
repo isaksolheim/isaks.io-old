@@ -28,6 +28,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          'gatsby-remark-static-images',
           {
             resolve: `gatsby-remark-highlight-code`,
             resolve: `gatsby-remark-images`,

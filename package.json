@@ -16,6 +16,7 @@
     "gatsby-remark-highlight-code": "^2.1.0",
     "gatsby-remark-images": "^3.3.30",
     "gatsby-remark-prismjs": "^3.5.15",
+    "gatsby-remark-static-images": "^1.2.1",
     "gatsby-source-filesystem": "^2.3.30",
     "gatsby-transformer-remark": "^2.8.37",
     "gatsby-transformer-sharp": "^2.5.15",
@@ -23,6 +24,7 @@
     "node-sass": "^4.14.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
+    "react-syntax-highlighter": "^15.2.1",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
     "typography-theme-github": "^0.16.19"
