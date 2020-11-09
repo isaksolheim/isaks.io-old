@@ -9,3 +9,7 @@ type: 'project'
 ## Programming timelapse creator
 
 > Check out the project [here](/programming-timelapse):
+
+![timelapse example](./timelapse.gif)
+
+Created using React.
