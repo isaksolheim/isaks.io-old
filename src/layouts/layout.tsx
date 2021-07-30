@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Header from '../components/header';
-import Navbar from '../components/navbar';
+import Header from '../components/Header/Header';
+import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/footer';
 import '../styles/main.scss';
 import Helmet from 'react-helmet';
