@@ -1,6 +1,17 @@
+@import '../../styles/mixins';
+
 li.project-container {
-  list-style-type: none;
   height: 340px;
+
+  @include mobile {
+    height: 100%;
+
+    h4 {
+      text-align: center;
+      margin-top: 270px;
+    }
+  }
+
   img.project-image {
     float: left;
     width: 210px;
@@ -9,6 +20,11 @@ li.project-container {
   ul {
     list-style-type: none;
     max-width: 500px;
+
+    @include mobile {
+      max-width: 300px;
+      margin: 0 auto;
+    }
 
     li {
       display: inline-block;
