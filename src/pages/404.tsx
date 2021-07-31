@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Layout from '../layouts/layout';
-import TextLink from '../components/text-link';
+import TextLink from '../components/TextLink/text-link';
 
 const NotFoundPage = () => (
   <div>

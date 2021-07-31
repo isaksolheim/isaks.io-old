@@ -1,0 +1,33 @@
+li.project-container {
+  list-style-type: none;
+  height: 340px;
+  img.project-image {
+    float: left;
+    width: 210px;
+  }
+
+  ul {
+    list-style-type: none;
+    max-width: 500px;
+
+    li {
+      display: inline-block;
+      margin-right: 16px;
+      margin-bottom: 16px;
+      width: 80px;
+      text-align: center;
+
+      img {
+        width: 60px;
+        margin: 0 auto;
+        margin-bottom: -8px;
+      }
+      label {
+        font-size: 12px;
+      }
+      label:hover {
+        cursor: text;
+      }
+    }
+  }
+}
