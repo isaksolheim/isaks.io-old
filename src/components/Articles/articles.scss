@@ -1,5 +1,6 @@
 ul.articles {
   list-style-type: none;
+  margin: 0px;
 
   li {
     width: 100%;
@@ -7,15 +8,17 @@ ul.articles {
     a {
       img {
         width: 64px;
+        height: 72px;
+        object-fit: cover;
         float: left;
-        margin-right: 16px;
-        padding-top: 8px;
+        margin-right: 8px;
+        padding-top: 4px;
       }
 
       p {
         color: #333;
-        font-size: 24px;
-        margin-bottom: 8px;
+        font-size: 1.25rem;
+        margin-bottom: 4px;
 
         line-height: 24px;
       }
