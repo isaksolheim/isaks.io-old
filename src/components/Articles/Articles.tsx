@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { FullMediumData, MediumData } from '../../utils/mediumDataType';
-import { Link } from 'gatsby';
 import './articles.scss';
 import TextLink from '../TextLink/text-link';
 const moment = require('moment');
@@ -29,11 +28,11 @@ const Articles = () => {
       <ul className='articles'>
         {blogData.map((article) => (
           <li key={article.link}>
-            <Link to={article.link}>
+            <a href={article.link}>
               <img src={article.thumbnail} alt='Article' />
               <p>{article.title}</p>
               <span>{moment(article.pubDate).format('MMMM Do YYYY')}</span>
-            </Link>
+            </a>
           </li>
         ))}
         <TextLink text='View more' url='https://medium.com/@isaksolheim' />
