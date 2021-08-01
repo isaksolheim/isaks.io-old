@@ -41,15 +41,29 @@ const Experience = () => (
 
       <p>
         Some of the technologies I use while working on this project are{' '}
-        <a href='#'>TypeScript</a>, <a href='#'>React</a>, <a href='#'>Redux</a>
-        , <a href='#'>Sass</a>, <a href='#'>Jest</a>,{' '}
-        <a href='#'>React Testing Library</a>, <a href='#'>Storybook</a>,{' '}
-        <a href='#'>Node</a>, <a href='#'>AWS</a> and <a href='#'>Kotlin</a>.
+        <a href='https://www.typescriptlang.org/'>TypeScript</a>,{' '}
+        <a href='https://reactjs.org/'>React</a>,{' '}
+        <a href='https://redux.js.org/'>Redux</a>,{' '}
+        <a href='https://sass-lang.com/'>Sass</a>,{' '}
+        <a href='https://jestjs.io/'>Jest</a>,{' '}
+        <a href='https://testing-library.com/'>React Testing Library</a>,{' '}
+        <a href='https://storybook.js.org/'>Storybook</a>,{' '}
+        <a href='https://nodejs.org/en/'>Node</a>,{' '}
+        <a href='https://aws.amazon.com/'>AWS</a> and{' '}
+        <a href='https://kotlinlang.org/'>Kotlin</a>.
       </p>
 
       <p>
         Oslonøkkelen has a total of 200k+ downloads. You can download it for
-        free on the <a href='#'>App Store</a> and <a href='#'>Google Play</a>.
+        free on the{' '}
+        <a href='https://apps.apple.com/us/app/oslon%C3%B8kkelen/id1392962722'>
+          App Store
+        </a>{' '}
+        and{' '}
+        <a href='https://play.google.com/store/apps/details?id=com.oslonokkel&hl=en&gl=US'>
+          Google Play
+        </a>
+        .
       </p>
       <h4>Covid-19 Staffing</h4>
       <p className='light'>March 2020 - June 2020</p>
