@@ -4,7 +4,7 @@ import './projects.scss';
 
 const Projects = () => (
   <React.Fragment>
-    <h2>Projects</h2>
+    <h2>Projects 🚀</h2>
     <ul className='projects-container'>
       <Project
         title='MyVinyl'

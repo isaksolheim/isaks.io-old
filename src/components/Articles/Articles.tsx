@@ -25,7 +25,7 @@ const Articles = () => {
 
   return (
     <React.Fragment>
-      <h2>Articles</h2>
+      <h2>Articles 📖</h2>
       <ul className='articles'>
         {blogData.map((article) => (
           <li key={article.link}>
