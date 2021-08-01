@@ -8,7 +8,7 @@ const Projects = () => (
     <ul className='projects-container'>
       <Project
         title='MyVinyl'
-        aboutText='iOS and Android app used to track vinyl plays.'
+        aboutText='iOS / Android app used to track vinyl plays.'
         imgName='myvinyl.png'
         techUsed={[
           { name: 'TypeScript', techImgName: 'typescript.png' },
@@ -18,11 +18,12 @@ const Projects = () => (
           { name: 'Discogs API', techImgName: 'discogs.png' },
           { name: 'Adobe XD', techImgName: 'adobexd.png' },
         ]}
+        projectLink='https://www.myvinyl.app'
       />
       <hr />
       <Project
         title='Beer In Review'
-        aboutText='iOS and Android app used to track and visualize beer consumtion.'
+        aboutText='iOS / Android app used to track and visualize beer consumtion.'
         imgName='beerinreview.png'
         techUsed={[
           { name: 'TypeScript', techImgName: 'typescript.png' },

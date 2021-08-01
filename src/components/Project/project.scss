@@ -17,6 +17,17 @@ li.project-container {
     width: 210px;
   }
 
+  a {
+    float: right;
+    font-size: 16px;
+  }
+
+  p.top-right-text {
+    float: right;
+    font-size: 16px;
+    color: #2c2c2ca8;
+  }
+
   ul {
     list-style-type: none;
     max-width: 500px;
