@@ -5,6 +5,7 @@ import './experience.scss';
 const Experience = () => (
   <div className='experience-container'>
     <h2>Experience 🎓</h2>
+    {/*
     <figure>
       <span className='top-dot' />
       <p className='top-text'>Current</p>
@@ -12,6 +13,7 @@ const Experience = () => (
       <span className='bottom-dot' />
       <p className='bottom-text'>2019</p>
     </figure>
+    */}
     <div className='content-container'>
       <h3>
         Software Engineer @{' '}
@@ -58,7 +60,6 @@ const Experience = () => (
         deliver a high-quality, stable product.
       </p>
     </div>
-    <br />
   </div>
 );
 
