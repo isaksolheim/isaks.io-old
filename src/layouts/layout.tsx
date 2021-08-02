@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/footer';
 import '../styles/main.scss';
 import Helmet from 'react-helmet';
-import favicon from '../assets/favicon.jpg';
+import favicon from '../assets/favicon.png';
 
 const Layout = ({ children }) => (
   <>
