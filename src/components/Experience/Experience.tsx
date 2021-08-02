@@ -1,8 +1,9 @@
 import React from 'react';
+import Img from 'gatsby-image';
 import Project from '../Project/Project';
 import './experience.scss';
 
-const Experience = () => (
+const Experience = ({ onImage }: { onImage: Object }) => (
   <div className='experience-container'>
     <h2>Experience 🎓</h2>
     {/*
@@ -27,8 +28,8 @@ const Experience = () => (
       </p>
       <h4>Oslonøkkelen</h4>
       <p className='light'>2019 - Current</p>
-      <img
-        src={require('../../assets/projectImages/oslonokkelen.png')}
+      <Img
+        fluid={onImage.childImageSharp.fluid}
         alt='oslonøkkelen'
         className='project-image'
       />
