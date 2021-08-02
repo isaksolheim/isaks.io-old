@@ -1,5 +1,6 @@
 import React from 'react';
 import './project.scss';
+import { Link } from 'gatsby';
 
 interface ProjectProps {
   title: string;
@@ -21,7 +22,7 @@ const Project = ({
 }: ProjectProps) => (
   <li className='project-container'>
     {projectLink ? (
-      <a href={projectLink}>View project</a>
+      <Link to={projectLink}>View project</Link>
     ) : (
       <p className='top-right-text'>In development</p>
     )}
