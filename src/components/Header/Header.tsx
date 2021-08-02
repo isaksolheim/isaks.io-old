@@ -10,7 +10,7 @@ const Header = () => (
       src='http://ghchart.rshah.org/wickdeeb'
       alt='Github contribution graph'
     />
-    <TextLink link='/' text='isaks.io' />
+    <TextLink url='/' text='isaks.io' />
   </header>
 );
 
