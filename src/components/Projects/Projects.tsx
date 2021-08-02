@@ -2,14 +2,22 @@ import React from 'react';
 import Project from '../Project/Project';
 import './projects.scss';
 
-const Projects = () => (
+const Projects = ({
+  myVinylImg,
+  beerInReviewImg,
+  cloudImg,
+}: {
+  myVinylImg: Object;
+  beerInReviewImg: Object;
+  cloudImg: Object;
+}) => (
   <React.Fragment>
     <h2>Projects 🚀</h2>
     <ul className='projects-container'>
       <Project
         title='MyVinyl'
         aboutText='iOS / Android app used to track vinyl plays.'
-        imgName='myvinyl.png'
+        img={myVinylImg}
         techUsed={[
           { name: 'TypeScript', techImgName: 'typescript.png' },
           { name: 'React Native', techImgName: 'react.png' },
@@ -24,7 +32,7 @@ const Projects = () => (
       <Project
         title='Beer In Review'
         aboutText='iOS / Android app used to track and visualize beer consumtion.'
-        imgName='beerinreview.png'
+        img={beerInReviewImg}
         techUsed={[
           { name: 'TypeScript', techImgName: 'typescript.png' },
           { name: 'React Native', techImgName: 'react.png' },
@@ -35,7 +43,7 @@ const Projects = () => (
       <Project
         title='Cloud'
         aboutText='Physical cloud that waters plants and drops beer.'
-        imgName='cloud.png'
+        img={cloudImg}
         techUsed={[
           { name: 'TypeScript', techImgName: 'typescript.png' },
           { name: 'Node', techImgName: 'nodejs.png' },

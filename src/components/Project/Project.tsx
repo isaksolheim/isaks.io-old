@@ -1,11 +1,12 @@
 import React from 'react';
-import './project.scss';
+import Img from 'gatsby-image';
 import { Link } from 'gatsby';
+import './project.scss';
 
 interface ProjectProps {
   title: string;
   aboutText: string;
-  imgName: string;
+  img: Object;
   techUsed: {
     name: string;
     techImgName: string;
@@ -16,7 +17,7 @@ interface ProjectProps {
 const Project = ({
   title,
   aboutText,
-  imgName,
+  img,
   techUsed,
   projectLink,
 }: ProjectProps) => (
@@ -26,8 +27,8 @@ const Project = ({
     ) : (
       <p className='top-right-text'>In development</p>
     )}
-    <img
-      src={require(`../../assets/projectImages/${imgName}`)}
+    <Img
+      fluid={img.childImageSharp.fluid}
       alt='project'
       className='project-image'
     />
@@ -37,7 +38,7 @@ const Project = ({
     <ul>
       {techUsed.map((tech) => (
         <li key={tech.name}>
-          <img src={require(`../../assets/techImages/${tech.techImgName}`)} />
+          <img src={require(`../../images/techImages/${tech.techImgName}`)} />
           <label>{tech.name}</label>
         </li>
       ))}
