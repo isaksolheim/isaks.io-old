@@ -1,5 +1,4 @@
 import React from 'react';
-import TextLink from '../TextLink/text-link';
 import './navbar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
