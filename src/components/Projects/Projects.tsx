@@ -43,6 +43,7 @@ const Projects = () => (
           { name: 'Raspberry PI', techImgName: 'raspberrypi.png' },
           { name: 'MQTT', techImgName: 'mqtt.png' },
         ]}
+        projectLink='/cloud'
       />
     </ul>
   </React.Fragment>
