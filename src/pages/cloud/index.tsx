@@ -35,6 +35,7 @@ const Cloud = ({ data }) => {
         fluid={data.inside.childImageSharp.fluid}
         alt='components mounted on wooden plate'
       />
+      <br />
       <p>
         The wooden plate with all the components mounted on it is then inserted
         into a cloud-shaped mold created from chicken wire. The mold is stuffed
@@ -52,6 +53,7 @@ const Cloud = ({ data }) => {
         fluid={data.progge.childImageSharp.fluid}
         alt='messy desk with code on computer screen'
       />
+      <br />
       <p>
         I also made it possible to toggle the beer drop mechanism using our app{' '}
         <a href='https://www.oslo.kommune.no/oslonokkelen/'>Oslonøkkelen</a>.
@@ -78,21 +80,21 @@ export const query = graphql`
   query cloudimages {
     image1: file(relativePath: { eq: "cloud/sky.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 720) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     progge: file(relativePath: { eq: "cloud/proggesetup.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 720) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     inside: file(relativePath: { eq: "cloud/tech.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 720) {
           ...GatsbyImageSharpFluid
         }
       }
