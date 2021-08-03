@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FullMediumData, MediumData } from '../../utils/mediumDataType';
 import './articles.scss';
-import TextLink from '../TextLink/text-link';
 const moment = require('moment');
 
 const Articles = () => {
@@ -35,7 +34,9 @@ const Articles = () => {
             </a>
           </li>
         ))}
-        <TextLink text='View more' url='https://medium.com/@isaksolheim' />
+        <a className='text-link' href='https://medium.com/@isaksolheim'>
+          View more
+        </a>
       </ul>
     </React.Fragment>
   );
