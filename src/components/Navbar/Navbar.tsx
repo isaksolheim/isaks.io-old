@@ -32,7 +32,7 @@ const Navbar = () => {
             <a href={link.url}>
               <FontAwesomeIcon
                 icon={link.icon}
-                style={{ marginRight: '4px', color: 'black' }}
+                style={{ marginRight: '2px', color: 'black', width: 20 }}
               />
               {link.text}
             </a>
