@@ -21,13 +21,19 @@ const About = () => (
         <a href='https://redux.js.org/'>Redux</a>
       </li>
       <li>
-        <a href='https://testing-library.com/'>React Testing Library</a>
-      </li>
-      <li>
         <a href='https://storybook.js.org/'>Storybook</a>
       </li>
       <li>
+        <a href='https://testing-library.com/'>React Testing Library</a>
+      </li>
+      <li>
         <a href='https://firebase.google.com/'>Firebase</a>
+      </li>
+      <li>
+        <a href='https://www.gatsbyjs.com/'>Gatsby</a>
+      </li>
+      <li>
+        <a href='https://kotlinlang.org/'>Kotlin</a>
       </li>
     </ul>
   </React.Fragment>
