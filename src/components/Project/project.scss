@@ -5,10 +5,24 @@ li.project-container {
 
   @include mobile {
     height: 100%;
+    position: relative;
+    padding-bottom: 24px;
 
     h4 {
       text-align: center;
-      margin-top: 270px;
+      margin-top: 210px;
+    }
+
+    a {
+      position: absolute;
+      bottom: 8px;
+      right: 0px;
+    }
+
+    p.top-right-text {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
     }
   }
 
