@@ -6,15 +6,6 @@ import './experience.scss';
 const Experience = ({ onImage }: { onImage: Object }) => (
   <div className='experience-container'>
     <h2>Experience 🎓</h2>
-    {/*
-    <figure>
-      <span className='top-dot' />
-      <p className='top-text'>Current</p>
-      <span className='line' />
-      <span className='bottom-dot' />
-      <p className='bottom-text'>2019</p>
-    </figure>
-    */}
     <div className='content-container'>
       <h3>
         Software Engineer @{' '}
