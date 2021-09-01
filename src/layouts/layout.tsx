@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Header from '../components/Header/Header';
 import Navbar from '../components/Navbar/Navbar';
-import Footer from '../components/footer';
-import '../styles/main.scss';
+import Footer from '../components/Footer/Footer';
+import './layout.scss';
 import Helmet from 'react-helmet';
 import favicon from '../assets/favicon.png';
 
