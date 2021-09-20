@@ -16,7 +16,7 @@ const Navbar = () => {
       icon: faLinkedin,
     },
     { text: 'Medium', url: 'https://medium.com/@isaksolheim', icon: faMedium },
-    { text: 'GitHub', url: 'https://github.com/wickdeeb', icon: faGithub },
+    { text: 'GitHub', url: 'https://github.com/isaksolheim', icon: faGithub },
     {
       text: 'YouTube',
       url: 'https://www.youtube.com/c/isaks',

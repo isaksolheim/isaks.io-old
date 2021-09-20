@@ -7,7 +7,7 @@ const Header = () => (
     <img src={require('../../assets/empty-svg.svg')} alt='background' />
     <img
       style={{ position: 'absolute', left: 0, top: 0 }}
-      src='http://ghchart.rshah.org/wickdeeb'
+      src='http://ghchart.rshah.org/isaksolheim'
       alt='Github contribution graph'
     />
     <TextLink url='/' text='isaks.io' />
