@@ -44,7 +44,3 @@ This project uses Firebase hosting. After configuring Firebase using the `fireba
 ```bash
 firebase deploy
 ```
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
