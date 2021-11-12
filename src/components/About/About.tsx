@@ -14,8 +14,7 @@ const About = () => (
     </p>
     <ul>
       <li>
-        🛰️ I'm learning C and building a satellite @{' '}
-        <a href='https://orbitntnu.com'>Orbit</a>
+        🛰️ I'm building a satellite @ <a href='https://orbitntnu.com'>Orbit</a>
       </li>
       <li>
         💻 I'm building a tool for students with Svelte and Tailwind @{' '}
