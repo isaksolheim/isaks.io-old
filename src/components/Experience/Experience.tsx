@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import Project from '../Project/Project';
 import './experience.scss';
 
@@ -19,11 +19,10 @@ const Experience = ({ onImage }: { onImage: Object }) => (
       </p>
       <h4>Oslonøkkelen</h4>
       <p className='light'>2019 - Current</p>
-      <Img
-        fluid={onImage.childImageSharp.fluid}
+      <GatsbyImage
+        image={onImage.childImageSharp.gatsbyImageData}
         alt='oslonøkkelen'
-        className='project-image'
-      />
+        className='project-image' />
       <p>
         Oslonøkkelen is a digital key that gives residents of Oslo expanded and
         easier access to several of the city's services. In a team of 10 people,

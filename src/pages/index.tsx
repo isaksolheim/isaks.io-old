@@ -19,39 +19,28 @@ const Home = ({ data }) => (
   </Layout>
 );
 
-export const query = graphql`
-  query indeximages {
-    onImage: file(relativePath: { eq: "projectImages/oslonokkelen.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    myVinylImg: file(relativePath: { eq: "projectImages/myvinyl.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    beerInReviewImg: file(
-      relativePath: { eq: "projectImages/beerinreview.png" }
-    ) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    cloudImg: file(relativePath: { eq: "projectImages/cloud.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
+export const query = graphql`query indeximages {
+  onImage: file(relativePath: {eq: "projectImages/oslonokkelen.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
+  myVinylImg: file(relativePath: {eq: "projectImages/myvinyl.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+  beerInReviewImg: file(relativePath: {eq: "projectImages/beerinreview.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+  cloudImg: file(relativePath: {eq: "projectImages/cloud.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+}
 `;
 
 export default Home;

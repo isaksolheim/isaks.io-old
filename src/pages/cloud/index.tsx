@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import { graphql } from 'gatsby';
 import Title from '../../components/Title/Title';
 import Layout from '../../layouts/layout';
@@ -12,10 +12,9 @@ const Cloud = ({ data }) => (
       During a hackathon me and a friend created physical cloud that could water
       plants, create steam and drop beer.
     </p>
-    <Img
-      fluid={data.image1.childImageSharp.fluid}
-      alt='cloud hanging from ceiling'
-    />
+    <GatsbyImage
+      image={data.image1.childImageSharp.gatsbyImageData}
+      alt='cloud hanging from ceiling' />
     <h2>The build</h2>
     <p>
       Inside the cloud, we have all the components mounted on a wooden plate.
@@ -29,10 +28,9 @@ const Cloud = ({ data }) => (
       <li>4 way relay module (used to switch on/off the components)</li>
       <li>Raspberry PI</li>
     </ul>
-    <Img
-      fluid={data.inside.childImageSharp.fluid}
-      alt='components mounted on wooden plate'
-    />
+    <GatsbyImage
+      image={data.inside.childImageSharp.gatsbyImageData}
+      alt='components mounted on wooden plate' />
     <br />
     <p>
       The wooden plate with all the components mounted on it is then inserted
@@ -47,10 +45,9 @@ const Cloud = ({ data }) => (
       the Relay Module, which performs the selected operation (drop a beer,
       toggle rain, toggle steam).
     </p>
-    <Img
-      fluid={data.progge.childImageSharp.fluid}
-      alt='messy desk with code on computer screen'
-    />
+    <GatsbyImage
+      image={data.progge.childImageSharp.gatsbyImageData}
+      alt='messy desk with code on computer screen' />
     <br />
     <p>
       I also made it possible to toggle the beer drop mechanism using our app{' '}
@@ -73,30 +70,23 @@ const Cloud = ({ data }) => (
   </Layout>
 );
 
-export const query = graphql`
-  query cloudimages {
-    image1: file(relativePath: { eq: "cloud/sky.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 720) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    progge: file(relativePath: { eq: "cloud/proggesetup.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 720) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    inside: file(relativePath: { eq: "cloud/tech.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 720) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+export const query = graphql`query cloudimages {
+  image1: file(relativePath: {eq: "cloud/sky.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 720, layout: CONSTRAINED)
     }
   }
+  progge: file(relativePath: {eq: "cloud/proggesetup.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 720, layout: CONSTRAINED)
+    }
+  }
+  inside: file(relativePath: {eq: "cloud/tech.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 720, layout: CONSTRAINED)
+    }
+  }
+}
 `;
 
 export default Cloud;
