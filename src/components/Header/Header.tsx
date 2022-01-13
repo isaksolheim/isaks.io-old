@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import TextLink from '../TextLink/text-link';
 import './header.scss';
-import ImageSVG from '../../assets/empty-svg.svg';
 import Svg from '../../assets/Svg';
 
 const Header = () => {
