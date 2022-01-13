@@ -8,6 +8,12 @@ header {
     width: 100%;
   }
 
+  img.contribution-graph {
+    position: 'absolute';
+    left: 0;
+    top: -4;
+  }
+
   a.text-link {
     cursor: pointer;
     color: #333;

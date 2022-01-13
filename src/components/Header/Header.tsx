@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import TextLink from '../TextLink/text-link';
 import './header.scss';
-import Svg from '../../assets/Svg';
+import EmptyContributionGraph from '../../assets/EmptyContributionGraph';
 
 const Header = () => {
   const [loaded, setLoaded] = useState(false);
@@ -11,10 +11,10 @@ const Header = () => {
 
   return (
     <header>
-      {!loaded && <Svg />}
+      {!loaded && <EmptyContributionGraph />}
       <img
-        style={{ position: 'absolute', left: 0, top: -4 }}
         src='https://ghchart.rshah.org/isaksolheim'
+        className='contribution-graph'
         alt='Github contribution graph'
         onLoad={handleOnLoad}
       />
