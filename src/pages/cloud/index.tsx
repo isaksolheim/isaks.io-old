@@ -1,5 +1,5 @@
 import React from 'react';
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { graphql } from 'gatsby';
 import Title from '../../components/Title/Title';
 import Layout from '../../layouts/layout';
@@ -14,7 +14,8 @@ const Cloud = ({ data }) => (
     </p>
     <GatsbyImage
       image={data.image1.childImageSharp.gatsbyImageData}
-      alt='cloud hanging from ceiling' />
+      alt='cloud hanging from ceiling'
+    />
     <h2>The build</h2>
     <p>
       Inside the cloud, we have all the components mounted on a wooden plate.
@@ -30,7 +31,8 @@ const Cloud = ({ data }) => (
     </ul>
     <GatsbyImage
       image={data.inside.childImageSharp.gatsbyImageData}
-      alt='components mounted on wooden plate' />
+      alt='components mounted on wooden plate'
+    />
     <br />
     <p>
       The wooden plate with all the components mounted on it is then inserted
@@ -47,7 +49,8 @@ const Cloud = ({ data }) => (
     </p>
     <GatsbyImage
       image={data.progge.childImageSharp.gatsbyImageData}
-      alt='messy desk with code on computer screen' />
+      alt='messy desk with code on computer screen'
+    />
     <br />
     <p>
       I also made it possible to toggle the beer drop mechanism using our app{' '}
@@ -60,7 +63,7 @@ const Cloud = ({ data }) => (
         width='270'
         height='480'
         frameBorder='0'
-        class='giphy-embed'
+        className='giphy-embed'
         allowFullScreen
       ></iframe>
       <p>
@@ -70,23 +73,24 @@ const Cloud = ({ data }) => (
   </Layout>
 );
 
-export const query = graphql`query cloudimages {
-  image1: file(relativePath: {eq: "cloud/sky.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(width: 720, layout: CONSTRAINED)
+export const query = graphql`
+  query cloudimages {
+    image1: file(relativePath: { eq: "cloud/sky.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 720, layout: CONSTRAINED)
+      }
+    }
+    progge: file(relativePath: { eq: "cloud/proggesetup.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 720, layout: CONSTRAINED)
+      }
+    }
+    inside: file(relativePath: { eq: "cloud/tech.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 720, layout: CONSTRAINED)
+      }
     }
   }
-  progge: file(relativePath: {eq: "cloud/proggesetup.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(width: 720, layout: CONSTRAINED)
-    }
-  }
-  inside: file(relativePath: {eq: "cloud/tech.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(width: 720, layout: CONSTRAINED)
-    }
-  }
-}
 `;
 
 export default Cloud;

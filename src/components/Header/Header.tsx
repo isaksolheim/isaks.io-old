@@ -11,7 +11,10 @@ const Header = () => {
   const handleOnLoad = () => setLoaded(true);
 
   useEffect(() => {
-    if (image.current.complete) setLoaded(true);
+    if (image.current.complete) {
+      console.log('...');
+      setLoaded(true);
+    }
   }, []);
 
   return (
