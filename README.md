@@ -4,7 +4,7 @@
 
 ## Project Status
 
-Live @ [https://isaks.io](isaks.io) ✨
+Live @ [isaks.io](https://isaks.io) ✨
 
 ## Development
 
