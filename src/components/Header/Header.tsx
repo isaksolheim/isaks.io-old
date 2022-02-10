@@ -12,7 +12,6 @@ const Header = () => {
 
   useEffect(() => {
     if (image.current.complete) {
-      console.log('...');
       setLoaded(true);
     }
   }, []);
