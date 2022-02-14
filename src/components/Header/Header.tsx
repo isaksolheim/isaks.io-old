@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 import TextLink from '../TextLink/text-link';
 import './header.scss';
 import EmptyContributionGraph from '../../assets/EmptyContributionGraph';
