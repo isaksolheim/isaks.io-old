@@ -1,8 +1,13 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '../layouts/layout';
 import TextLink from '../components/TextLink/text-link';
+import { log } from '../utils/firebaseConfig';
 
-const NotFoundPage = () => (
+const NotFoundPage = () => {
+  useEffect(() => {
+    log('visit_404');
+  }, []);
+  return(
   <div>
     <h1>NOT FOUND</h1>
     <p>

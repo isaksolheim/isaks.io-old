@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { graphql } from 'gatsby';
 import Title from '../../components/Title/Title';
 import Layout from '../../layouts/layout';
 import './cloud.scss';
+import { log } from '../../utils/firebaseConfig';
 
-const Cloud = ({ data }) => (
+const Cloud = ({ data }) => {
+  useEffect(() => {
+    log('visit_cloud_project');
+  }, []);
+  return(
   <Layout>
     <Title text='Cloud' />
     <p>
