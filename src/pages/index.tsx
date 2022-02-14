@@ -10,8 +10,6 @@ import { log } from '../utils/firebaseConfig';
 const Home = ({ data }) => {
   useEffect(() => {
     log('visit_homepage');
-    const FIREBASE_CONFIG = JSON.parse(process.env.FIREBASE_CONFIG);
-    console.log(FIREBASE_CONFIG);
   }, []);
   return (
     <Layout>
