@@ -44,3 +44,19 @@ This project uses Firebase hosting. After configuring Firebase using the `fireba
 ```bash
 firebase deploy
 ```
+
+Note:
+Before deploying, the file `src/utils/firebase-cred.ts` must be created. It should containt Firebase credentials with the following structure:
+
+```javascript
+export const FirebaseConfig = {
+  apiKey: 'API_KEY',
+  authDomain: 'AUTH_DOMAIN',
+  databaseURL: 'DATABASE_URL',
+  projectId: 'PROJECT_ID',
+  storageBucket: 'STORAGE_BUCKET',
+  messagingSenderId: 'MESSAGING_SENDER_ID',
+  appId: 'APP_ID',
+  measurementId: 'MEASUREMENT_ID',
+};
+```
