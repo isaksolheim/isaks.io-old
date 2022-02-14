@@ -8,6 +8,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
+    "firebase": "^9.6.6",
     "gatsby": "^4.4.0",
     "gatsby-image": "^3.11.0",
     "gatsby-link": "^4.4.0",

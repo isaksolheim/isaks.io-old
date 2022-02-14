@@ -20,3 +20,4 @@ firebase-error.log*
 
 # Misc
 .firebase/
+firebase-cred.ts
