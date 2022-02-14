@@ -1,6 +1,9 @@
 import React from 'react';
 import './footer.scss';
 
-const Footer = () => <footer>isaks.io / 2021</footer>;
+const Footer = () => {
+  const year = new Date().getFullYear();
+  return <footer>isaks.io / {year}</footer>;
+};
 
 export default Footer;
