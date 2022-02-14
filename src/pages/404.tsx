@@ -7,14 +7,16 @@ const NotFoundPage = () => {
   useEffect(() => {
     log('visit_404');
   }, []);
-  return(
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>
-      You just hit a route that doesn&#39;t exist...{' '}
-      <TextLink url='/' text='Go back' />
-    </p>
-  </div>
-);
+
+  return (
+    <div>
+      <h1>NOT FOUND</h1>
+      <p>
+        You just hit a route that doesn&#39;t exist...{' '}
+        <TextLink url='/' text='Go back' />
+      </p>
+    </div>
+  );
+};
 
 export default NotFoundPage;
