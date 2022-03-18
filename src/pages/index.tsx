@@ -5,12 +5,16 @@ import Articles from '../components/Articles/Articles';
 import Projects from '../components/Projects/Projects';
 import About from '../components/About/About';
 import Experience from '../components/Experience/Experience';
-import { log } from '../utils/firebaseConfig';
+import firebase from 'gatsby-plugin-firebase';
 
 const Home = ({ data }) => {
   useEffect(() => {
-    log('visit_homepage');
-  }, []);
+    if (!firebase) {
+      return;
+    }
+
+    firebase.analytics().logEvent('visited_homepage');
+  }, [firebase]);
   return (
     <Layout>
       <About />

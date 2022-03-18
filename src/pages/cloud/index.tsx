@@ -1,15 +1,18 @@
 import React, { useEffect } from 'react';
-import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import Title from '../../components/Title/Title';
 import Layout from '../../layouts/layout';
 import './cloud.scss';
-import { log } from '../../utils/firebaseConfig';
+import firebase from 'gatsby-plugin-firebase';
 
 const Cloud = () => {
   useEffect(() => {
-    log('visit_cloud_project');
-  }, []);
+    if (!firebase) {
+      return;
+    }
+
+    firebase.analytics().logEvent('visited_cloud_project');
+  }, [firebase]);
 
   return (
     <Layout>
