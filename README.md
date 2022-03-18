@@ -46,17 +46,9 @@ firebase deploy
 ```
 
 Note:
-Before deploying, the file `src/utils/firebase-cred.ts` must be created. It should containt Firebase credentials with the following structure:
+When running locally, the file `.env` must be created. It should containt Firebase credentials with the following structure:
 
-```javascript
-export const FirebaseConfig = {
-  apiKey: 'API_KEY',
-  authDomain: 'AUTH_DOMAIN',
-  databaseURL: 'DATABASE_URL',
-  projectId: 'PROJECT_ID',
-  storageBucket: 'STORAGE_BUCKET',
-  messagingSenderId: 'MESSAGING_SENDER_ID',
-  appId: 'APP_ID',
-  measurementId: 'MEASUREMENT_ID',
+```bash
+GATSBY_FIREBASE_API_KEY=<YOUR_FIREBASE_API_KEY> GATSBY_FIREBASE_AUTH_DOMAIN=<YOUR_FIREBASE_AUTH_DOMAIN> GATSBY_FIREBASE_DATABASE_URL=<YOUR_FIREBASE_DATABASE_URL> GATSBY_FIREBASE_PROJECT_ID=<YOUR_FIREBASE_PROJECT_ID> GATSBY_FIREBASE_STORAGE_BUCKET=<YOUR_FIREBASE_STORAGE_BUCKET> GATSBY_FIREBASE_MESSAGING_SENDER_ID=<YOUR_FIREBASE_MESSAGING_SENDER_ID> GATSBY_FIREBASE_APP_ID=<YOUR_FIREBASE_APP_ID> GATSBY_FIREBASE_MEASUREMENT_ID=<YOUR_FIREBASE_ANALYTICS_TRACKING_ID>
 };
 ```
