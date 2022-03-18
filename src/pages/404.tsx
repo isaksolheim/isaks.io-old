@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react';
-import Layout from '../layouts/layout';
 import TextLink from '../components/TextLink/text-link';
-import { log } from '../utils/firebaseConfig';
+import firebase from 'gatsby-plugin-firebase';
 
 const NotFoundPage = () => {
   useEffect(() => {
-    log('visit_404');
-  }, []);
+    if (!firebase) {
+      return;
+    }
 
+    firebase.analytics().logEvent('visited_404');
+  }, [firebase]);
   return (
     <div>
       <h1>NOT FOUND</h1>
