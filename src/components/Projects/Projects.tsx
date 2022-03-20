@@ -15,6 +15,14 @@ const Projects = ({
     <h2>Projects 🚀</h2>
     <ul className='projects-container'>
       <Project
+        title='Cloud'
+        aboutText='Physical cloud that waters plants and drops beer.'
+        img={cloudImg}
+        techUsed='TypeScript, Node, Python, Raspberry PI, MQTT'
+        projectLink='/cloud'
+      />
+      <hr />
+      <Project
         title='MyVinyl'
         aboutText='iOS / Android app used to track vinyl plays.'
         img={myVinylImg}
@@ -27,14 +35,6 @@ const Projects = ({
         aboutText='iOS / Android app used to track and visualize beer consumtion.'
         img={beerInReviewImg}
         techUsed='TypeScript, React Native, Lottie'
-      />
-      <hr />
-      <Project
-        title='Cloud'
-        aboutText='Physical cloud that waters plants and drops beer.'
-        img={cloudImg}
-        techUsed='TypeScript, Node, Python, Raspberry PI, MQTT'
-        projectLink='/cloud'
       />
     </ul>
   </React.Fragment>
