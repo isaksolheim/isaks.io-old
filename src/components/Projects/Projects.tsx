@@ -15,17 +15,18 @@ const Projects = ({
     <h2>Projects 🚀</h2>
     <ul className='projects-container'>
       <Project
+        title='Cloud'
+        aboutText='Physical cloud that waters plants and drops beer.'
+        img={cloudImg}
+        techUsed='TypeScript, Node, Python, Raspberry PI, MQTT'
+        projectLink='/cloud'
+      />
+      <hr />
+      <Project
         title='MyVinyl'
         aboutText='iOS / Android app used to track vinyl plays.'
         img={myVinylImg}
-        techUsed={[
-          { name: 'TypeScript', techImgName: 'typescript.png' },
-          { name: 'React Native', techImgName: 'react.png' },
-          { name: 'Redux', techImgName: 'redux.png' },
-          { name: 'Firebase', techImgName: 'firebase.png' },
-          { name: 'Discogs API', techImgName: 'discogs.png' },
-          { name: 'Adobe XD', techImgName: 'adobexd.png' },
-        ]}
+        techUsed='TypeScript, React Native, Redux, Firebase, Discogs API, Adobe XD'
         projectLink='https://www.myvinyl.app'
       />
       <hr />
@@ -33,25 +34,7 @@ const Projects = ({
         title='Beer In Review'
         aboutText='iOS / Android app used to track and visualize beer consumtion.'
         img={beerInReviewImg}
-        techUsed={[
-          { name: 'TypeScript', techImgName: 'typescript.png' },
-          { name: 'React Native', techImgName: 'react.png' },
-          { name: 'Lottie', techImgName: 'lottie.png' },
-        ]}
-      />
-      <hr />
-      <Project
-        title='Cloud'
-        aboutText='Physical cloud that waters plants and drops beer.'
-        img={cloudImg}
-        techUsed={[
-          { name: 'TypeScript', techImgName: 'typescript.png' },
-          { name: 'Node', techImgName: 'nodejs.png' },
-          { name: 'Python', techImgName: 'python.png' },
-          { name: 'Raspberry PI', techImgName: 'raspberrypi.png' },
-          { name: 'MQTT', techImgName: 'mqtt.png' },
-        ]}
-        projectLink='/cloud'
+        techUsed='TypeScript, React Native, Lottie'
       />
     </ul>
   </React.Fragment>

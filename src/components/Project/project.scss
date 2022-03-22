@@ -1,75 +1,80 @@
 @import '../../styles/mixins';
 
-li.project-container {
-  height: 340px;
+.project-container {
+  li {
+    height: 266px;
+    box-shadow: 0px 0px 3px #00000029;
+    color: hsla(0, 0%, 0%, 0.8);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    padding: 16px;
+    border-radius: 4px;
 
-  @include mobile {
-    height: 100%;
-    position: relative;
-    padding-bottom: 24px;
+    border: 2px solid white;
 
-    h4 {
-      text-align: center;
-      margin-top: 210px;
+    @include mobile {
+      height: 100%;
+      min-height: 266px;
+      position: relative;
+      padding-bottom: 24px;
+
+      h4 {
+        text-align: center;
+        margin-top: 210px;
+      }
+
+      a {
+        position: absolute;
+        bottom: 8px;
+        right: 0px;
+      }
+
+      .text-content {
+        max-width: 50%;
+
+        h3 {
+          margin-top: 0px;
+        }
+      }
+    }
+
+    .section-container {
+      width: 100%;
+      position: relative;
+      .text-content {
+        width: 70%;
+        h3 {
+          margin-top: 0px;
+        }
+      }
+
+      .project-image {
+        width: 130px;
+        position: absolute;
+        top: 40px;
+        right: -20px;
+      }
     }
 
     a {
-      position: absolute;
-      bottom: 8px;
-      right: 0px;
+      float: right;
+      font-size: 16px;
     }
 
     p.top-right-text {
-      position: absolute;
-      bottom: 0px;
-      right: 0px;
+      float: right;
+      font-size: 16px;
+      color: #2c2c2ca8;
     }
   }
+}
 
-  .project-image {
-    float: left;
-    width: 210px;
-  }
+.project-container:hover {
+  text-decoration: none;
+  cursor: pointer;
 
-  a {
-    float: right;
-    font-size: 16px;
-  }
-
-  p.top-right-text {
-    float: right;
-    font-size: 16px;
-    color: #2c2c2ca8;
-  }
-
-  ul {
-    list-style-type: none;
-    max-width: 500px;
-
-    @include mobile {
-      max-width: 300px;
-      margin: 0 auto;
-    }
-
-    li {
-      display: inline-block;
-      margin-right: 16px;
-      margin-bottom: 16px;
-      width: 80px;
-      text-align: center;
-
-      figure.image-container {
-        width: 60px;
-        margin: 0 auto;
-        margin-bottom: -8px;
-      }
-
-      label {
-        font-size: 12px;
-      }
-      label:hover {
-        cursor: text;
-      }
-    }
+  li {
+    border: 2px solid rgb(230, 208, 208);
   }
 }
